@@ -217,7 +217,7 @@ section .sub-container{
 margin: 0 auto;
 }
 section.about{
-  background: tomato;
+  
   margin: 80px 0;
 }
 section.about .sub-container{
@@ -274,5 +274,55 @@ section.about .sub-container li a .text p.more::before{
   position: absolute;
   top: -7px;
   left: 0;
+}
+/* section.inovation style */
+
+section .innovation{
+  margin-bottom: 150px;
+}
+section .innovation .img-box{
+  margin-top: 50px;
+  height: 540px;
+  background: url(../img/product_1.jpg) no-repeat center / cover;
+position: relative;
+}
+section .innovation .img-box .inner{
+  background: #3a3c4e;
+  width: 80%;
+  color: #fff;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+section .innovation .img-box .inner h3{
+  background: #fff;
+  color: #222;
+  font-size: 18px;
+  padding: 25px 45px;
+  box-sizing: border-box;
+}
+section .innovation .img-box .inner .bottom{
+  padding: 35px 85px;
+  box-sizing: border-box;
+}
+section .innovation .img-box .inner .bottom p{
+  /* background: yellow; */
+  float: left;
+  width: 70%;
+  line-height: 1.6;
+}
+section .innovation .img-box .inner .bottom a{
+  /* flot사용할거면 굳이 block 으로 바꿀 필요없음 */
+  /* background: aqua; */
+  float: right;
+  padding: 7px 30px;
+  border-radius: 50px;
+  background: #ff8342;
+}
+
+section .innovation .img-box .inner .bottom a:hover{
+  background: #f86010;
+  
 }
 
