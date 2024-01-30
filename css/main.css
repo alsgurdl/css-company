@@ -427,32 +427,37 @@ section.me ul.list ul.in li p::before {
   padding: 10px 0;
   cursor: pointer;
 }
-/* section.sns */
-section.sns{
-  margin-bottom: 60px;
-  
-}
-section.sns ul{
-  
-  margin: 50px auto;
 
+/* section.sns style */
+section.sns {
+  margin-bottom: 60px;
 }
-section.sns ul li{
+
+section.sns ul {
+  margin: 50px auto;
+}
+
+section.sns ul li {
   float: left;
   width: 32%;
   margin-right: 2%;
-  height: 210px;
-  padding: 0px 10px;
 }
-section.sns ul li:last-child{
+
+section.sns ul li:last-child {
   margin-right: 0;
 }
+
 section.sns ul li .img-box {
-  max-width: 250px;
+  max-height: 250px;
   overflow: hidden;
   position: relative;
 }
-section.sns ul li .img-box::before{
+
+section.sns ul li .img-box img {
+  width: 100%;
+}
+
+section.sns ul li .img-box::before {
   content: '';
   width: 0;
   height: 100%;
@@ -461,56 +466,57 @@ section.sns ul li .img-box::before{
   top: 0;
   left: 0;
   transition: 0.5s;
-
 }
-section.sns ul li .img-box::after{
-  content: 'blog';
+
+section.sns ul li a:hover .img-box::before {
+  width: 100%;
+}
+
+section.sns ul li .img-box::after {
+  content: 'BLOG';
   font-size: 15px;
-  color: #fff;
   font-family: 'EXO 2', sans-serif;
   border: 1px solid #fff;
   border-radius: 40px;
+  color: #fff;
   padding: 5px 30px;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: 0.7s;
+  transition: 0.5s;
 }
-section.sns ul li a:hover .img-box::after{
+
+section.sns ul li a:hover .img-box::after {
   opacity: 1;
-} 
-section.sns ul li a:hover .img-box::before{
-  width: 100%;
-}
-
-
-section.sns ul li .img-box img{
-  width: 100%;
 }
 
 
 
-
-section.sns ul li .bottom{
+section.sns ul li .bottom {
   padding: 20px 0 20px 30px;
   box-sizing: border-box;
 }
-section.sns ul li .bottom p{
+
+section.sns ul li .bottom p {
   font-size: 18px;
 }
-section.sns ul li .bottom p.color{
+
+section.sns ul li .bottom p.color {
   color: #999;
   font-size: 15px;
   margin-bottom: 10px;
 }
-section.sns ul li .bottom p.time{
+
+section.sns ul li .bottom p.time {
   color: #999;
   font-size: 14px;
   margin-top: 30px;
 }
-section.sns ul li .bottom p.time i{
+
+section.sns ul li .bottom p.time i {
   margin-right: 5px;
   font-size: 0.9em;
 }
@@ -528,4 +534,3 @@ footer .inner .list{
 footer .inner .list li{
   display: inline;
 }
-
